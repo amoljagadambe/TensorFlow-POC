@@ -1,5 +1,4 @@
 import numpy
-import math
 
 speed = [86, 87, 88, 86, 87, 85, 86]
 
@@ -62,8 +61,8 @@ def stdCalualation(elements=[]):
     for i in elements:
         normal = i - meanCalualation(elements)
         squre_sum.append(normal ** 2)
-    return math.sqrt(sum(squre_sum) / n_elements)
-
+    number = sum(squre_sum) / n_elements
+    return number ** (1 / 2)
 
 '''
 stdCalualation() accept array or list which is flatten by default
