@@ -1,5 +1,5 @@
 from utils import *
-
+import math
 
 def grid_values(grid):
     """Convert grid string into {<box>: <value>} dict with '123456789' value for empties.
@@ -88,7 +88,7 @@ def reduce_puzzle(values):
     return values
 
 def search(values):
-    "Using depth-first search and propagation, try all possible values."
+    "Usingp depth-first search and proagation, try all possible values."
     # First, reduce the puzzle using the previous function
     values = reduce_puzzle(values)
     # print(values)
@@ -108,5 +108,9 @@ def search(values):
         if attempt:
             return attempt
 
+scores = [3, 5, 2, 9, 12, 5, 23, 23]
+treeDepth = math.log(15, 2)
+
+print(treeDepth)
 # print(output_dict)
 print(search(output_dict))

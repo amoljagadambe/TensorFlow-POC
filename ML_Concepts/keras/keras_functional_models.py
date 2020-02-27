@@ -1,6 +1,6 @@
 """
 Before running this code please make sure you have installed 
-https://www.graphviz.org/ . this lib help to convet the model 
+https://www.graphviz.org/ . this lib help to convert the model
 into .png file
 
 This POC is based upon the below article
