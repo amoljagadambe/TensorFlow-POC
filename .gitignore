@@ -15,3 +15,4 @@ build/
 *.index
 training_checkpoints/
 tf-deeplearning/
+cnn/mnist_data/
